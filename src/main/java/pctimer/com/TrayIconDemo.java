@@ -5,6 +5,7 @@ package pctimer.com;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.net.URI;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
@@ -163,9 +164,27 @@ static String[] lfOptions = { "com.sun.java.swing.plaf.gtk.GTKLookAndFeel","com.
         
         aboutItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,
-
-            "Project 21-NOV-2025 \n" + "  https://github.com/melvintauro/JavaProjects");
+            	// Create a standard JLabel styled with HTML
+                JLabel hyperlink = new JLabel("<html><a href=''>Visit PCScreenTimer Project 21-NOV-2025 </a> </html>");
+                
+                // Style it to look like a link and change the cursor on hover
+                hyperlink.setForeground(Color.BLUE.darker());
+                hyperlink.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                // Add click behavior
+                hyperlink.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        try {
+                            if (Desktop.isDesktopSupported()) {
+                                Desktop.getDesktop().browse(new URI("https://github.com/melvintauro/PCScreenTimer"));
+                            }
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                });
+                
+            	JOptionPane.showMessageDialog(null,  hyperlink);
 
                
             }

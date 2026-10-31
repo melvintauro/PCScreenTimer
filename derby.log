@@ -1,4 +1,4 @@
-Fri Oct 30 21:54:54 AST 2026 Thread[Thread-0,5,main] Cleanup action starting
+Sat Oct 31 12:41:37 AST 2026 Thread[Thread-0,5,main] Cleanup action starting
 java.sql.SQLException: Failed to start database 'eventHistoryDB' with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
@@ -200,7 +200,7 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /hom
 	at pctimer.com.MyThread.run(MyThread.java:80)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Fri Oct 30 21:55:02 AST 2026 Thread[Thread-2,5,main] Cleanup action starting
+Sat Oct 31 12:41:46 AST 2026 Thread[Thread-2,5,main] Cleanup action starting
 java.sql.SQLException: Failed to start database 'eventHistoryDB' with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
@@ -217,7 +217,7 @@ java.sql.SQLException: Failed to start database 'eventHistoryDB' with class load
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
 	at pctimer.com.EventTableDB.setupTable(EventTableDB.java:24)
-	at pctimer.com.MyThread.lambda$0(MyThread.java:85)
+	at pctimer.com.MyThread.lambda$run$0(MyThread.java:85)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: ERROR XJ040: Failed to start database 'eventHistoryDB' with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
@@ -287,7 +287,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
 	at pctimer.com.EventTableDB.setupTable(EventTableDB.java:24)
-	at pctimer.com.MyThread.lambda$0(MyThread.java:85)
+	at pctimer.com.MyThread.lambda$run$0(MyThread.java:85)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /home/mel/WorkSpace/PCScreenTimer/eventHistoryDB.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
@@ -398,7 +398,7 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /hom
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
 	at pctimer.com.EventTableDB.setupTable(EventTableDB.java:24)
-	at pctimer.com.MyThread.lambda$0(MyThread.java:85)
+	at pctimer.com.MyThread.lambda$run$0(MyThread.java:85)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
