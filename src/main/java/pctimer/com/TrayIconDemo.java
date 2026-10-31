@@ -164,7 +164,7 @@ static String[] lfOptions = { "com.sun.java.swing.plaf.gtk.GTKLookAndFeel","com.
         aboutItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null,
-                        "Project 21-NOV-2025 \n" + "  https://github.com/melvintauro/JavaProjects");
+                        "Project 21-NOV-2025 change \n" + "  https://github.com/melvintauro/JavaProjects");
                
             }
         });
